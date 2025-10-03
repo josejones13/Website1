@@ -11,14 +11,24 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #F0F0F2; /* light gray */
+    background-color: #ffffff; /* plain white */
     color: #333;
     line-height: 1.6;
 }
+/* Homepage special gradient background */
+body.home-page {
+    background: linear-gradient(135deg, #0455BF, #F29D52, #F27127);
+    min-height: 100vh; /* covers the full viewport */
+    color: #fff; /* default text white for readability */
+}
 
-/* ============================
-   Header & Navigation
-   ============================ */
+body.home-page h1,
+body.home-page h2,
+body.home-page p {
+    color: #fff;
+}
+
+/*Header & Navigation */
 header {
     background: linear-gradient(120deg, #0455BF, #F29D52); /* blue to orange */
     padding: 20px;
@@ -68,7 +78,7 @@ main {
 }
 
 h2 {
-    color: #0455BF; /* blue headings */
+    color: #fff; /* white headings look cleaner on gradient */
     margin-bottom: 15px;
 }
 
