@@ -1,0 +1,230 @@
+/* CSS Document */
+@charset"UTF-8";
+/* ============================
+   Global Reset + Base Styles
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F0F0F2; /* light gray */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============================
+   Header & Navigation
+   ============================ */
+header {
+    background: linear-gradient(120deg, #0455BF, #F29D52); /* blue to orange */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #F27127; /* bold orange accent */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background: #F27127; /* orange-red hover */
+    color: #fff;
+}
+
+/* ============================
+   Main Content
+   ============================ */
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #0455BF; /* blue headings */
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Sections like Projects */
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-left: 6px solid #F29D52; /* soft orange accent */
+}
+
+/* ============================
+   Contact Form
+   ============================ */
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #ddd;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #0455BF;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #0455BF;
+    box-shadow: 0 0 4px rgba(4, 85, 191, 0.4);
+}
+
+form button {
+    background: linear-gradient(120deg, #F29D52, #F27127);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #A60303; /* deep red hover */
+}
+
+/* ============================
+   Footer
+   ============================ */
+footer {
+    background: #0455BF;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    border-top: 3px solid #F29D52;
+}
+/* About Me Section Layout Using Floats and Semantic Tags */
+.about-me {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #F29D52;
+    overflow: hidden; /* Ensure it wraps floated elements */
+}
+
+.about-image {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+.about-image img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    float: left;
+    width: 65%;
+}
+
+/* ============================
+   Video Styling
+   ============================ */
+.intro-video {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ============================
+   Responsive Design
+   ============================ */
+/* Mobile */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+    .about-text,
+    .about-image {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Laptop/Desktop */
+@media (min-width: 901px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form with Validation -->
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <!-- Email validation with HTML5 type -->
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Telephone Number:</label>
+            <!-- Pattern ensures 10-digit phone number -->
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+            <label for="comments">Message:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40" required></textarea><br><br>
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Josée Jones | Contact: jose.jones@ontariotechu.net</p>
+    </footer>
+</body>
+</html>
