@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
@@ -29,26 +31,40 @@
             <figure class="about-image">
                 <img src="images/picofme.jpg" alt="My Photo" width="200">
             </figure>
-    <article class="about-text">
-        <h2>About Me</h2>
-        <p>Hi, my name is Josée Jones. I am currently playing on the Ontario Tech Women's Soccer Team and am in the Networking and IT program.
-            I have also become the new BIPOC Student Athletes Association President and am excited to create a safe space for athletes on our campus! My favourite things to do when I'm not playing soccer or studying
-            is to, listen to music, bake, dance and watch law and order: special victims unit. I hope you enjoy my webpage!
-        </p>
-        <section>
-            <h2>Video </h2>
-            <p> Here is a short video of my two favorite soccer players, Ousmane Dembélé and Paul Pogba</p>
+            <article class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, my name is Josée Jones. I am currently playing on the Ontario Tech Women's Soccer Team and am in
+                    the Networking and IT program.
+                    I have also become the new BIPOC Student Athletes Association President and am excited to create a
+                    safe space for athletes on our campus! My favourite things to do when I'm not playing soccer or
+                    studying
+                    is to, listen to music, bake, dance and watch law and order: special victims unit. I hope you enjoy
+                    my webpage!
+                </p>
+                <section>
+                    <h2>Video </h2>
+                    <p> Here is a short video of my two favorite soccer players, Ousmane Dembélé and Paul Pogba</p>
+                </section>
+            </article>
+
+            <div style="clear: both;"></div>
+
+            <video controls width="75%" height="75%" class="intro-video">
+                <source src="videos/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <button onclick="playPause()">Play or pause the video</button>
+            <script>
+                var myVideo = document.getElementById("video");
+                function playPause() {
+                    if (myVideo.paused)
+                        myVideo.play();
+                    else myvideo.pause();
+                }
+            </script>
+
         </section>
-    </article>
-
-    <div style="clear: both;"></div>
-
-    <video controls width="75%" height ="75%" class="intro-video">
-        <source src="videos/video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-</section>
 
     </main>
 
@@ -57,4 +73,5 @@
         <p>© 2025 Josee Jones | Contact: jose.jones@ontariotechu.net</p>
     </footer>
 </body>
+
 </html>

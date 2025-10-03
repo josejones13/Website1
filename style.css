@@ -143,6 +143,14 @@ form button:hover {
     background: #A60303; /* deep red hover */
 }
 
+button {
+background-color:black;
+color:white;
+height:40px;
+border:2px white solid;
+box-shadow: 10px 10px 5px black;
+border-radius: 5px;}
+
 /* ============================
    Footer
    ============================ */
